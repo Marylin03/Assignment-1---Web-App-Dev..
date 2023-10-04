@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="/@fortawesome/fontawesome-free/css/all.min.css"/>
+  <style>
+    ul.navbar-nav {
+      list-style: none;
+      display: flex;
+      font-size: 20px;
+      margin-right: 20px;
+      justify-content: flex-end;
+      margin-bottom: auto;
+    }
+
+    ul.navbar-nav li {
+      margin-left: 20px;
+    }
+
+    a:link, a:visited, a:hover, a:active {
+      text-decoration: none;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      color: #000000;
+      background-color: #FDF7F2;
+    }
+
+    footer {
+      color: #000000;
+      padding: 10px;
+      text-align: right;
+      margin-top: auto;
+    }
+    .mission-box {
+    background-color: #A8A29C;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-style: italic;
+    font-size: 22px;
+    margin: 0;
+    color: #000; 
+    position: relative; 
+}
+
+.mission-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-line, .right-line {
+  position: absolute;
+  width: 60%;
+  height: 2px;
+  background-color: #FDF7F2;
+  top: 50%;
+}
+
+.left-line {
+  left: 0;
+  transform: translateX(-50%);
+}
+
+.right-line {
+  right: 0;
+  transform: translateX(50%);
+  margin-left: 20px;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <img src="/img/logo.png" alt="logo" style="width: 250px; height: 250px; margin-right: auto;"> 
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mb-2 mb-lg-0"> 
+          <li class="nav-item">
+            <a class="nav-link" href="/about"><i class="fa-solid fa-address-card"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/projects"><i class="fa-brands fa-project-hunt"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/services"><i class="fa-brands fa-servicestack"></i> Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact"><i class="fa-solid fa-address-book"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="jumbotron">
+      <h1><%= title %> Page Of My Portfolio</h1>
+      <div class="mission-box">
+        <div class="mission-text">
+          <div class="left-line"></div>
+          <p>Transforming Healthcare Delivery through Data-Driven Solutions</p>
+          <div class="right-line"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <nav class="navbar navbar-dark bg-dark">
+      <h6 class="display-6 navbar-text">&copy;2023. Assignment1_Mayvis Ouaziri_301228705. All rights reserved</h6>
+    </nav>
+  </footer>
+  <script src="/jquery/dist/jquery.min.js"></script>
+  <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

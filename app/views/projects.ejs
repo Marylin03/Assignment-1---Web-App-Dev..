@@ -1,0 +1,57 @@
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+
+<main class="container">
+  <div class="jumbotron">
+    <h1 class="display-4">My <%= title %></h1>
+  </div>
+</main>
+<br>
+<hr>
+<br>
+<div class="container">
+  <div class="row" style="display: flex; justify-content: space-between;">
+    <div class="col-md-4" style="flex: 0 0 30%; margin-bottom: 20px;">
+      <div class="card" style="width: 100%;">
+        <img src="/img/project2.png" class="card-img-top" alt="Project 1" style="width: 420px; height: 195px;">
+        <div class="card-body">
+          <p class="card-text">I participated in a group project that applied Agile methodologies for project management. Our goal was to plan and conceptualize a travel assistant app collaboratively. We adopted Agile principles to improve teamwork, prioritize features, and iterate efficiently, resulting in a well-structured project plan aligned with user needs.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4" style="flex: 0 0 30%; margin-bottom: 20px;">
+      <div class="card" style="width: 100%;">
+        <img src="/img/webdesign.png" class="card-img-top" alt="Project 2" style="width: 420px; height: 195px;">
+        <div class="card-body">
+          <p class="card-text">Conceptualized, designed, and developed a visually appealing and user-friendly marketing website. 
+            Utilized HTML and CSS to create an interactive and responsive site.
+            Incorporated property listings, high-quality images, and relevant information to showcase the real estate.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4" style="flex: 0 0 30%; margin-bottom: 20px;">
+      <div class="card" style="width: 100%;">
+        <img src="/img/project3.png" class="card-img-top" alt="Project 3" style="width: 420px; height: 195px;">
+        <div class="card-body">
+          <p class="card-text">I collaborated on a MySQL database project for a clothing store. Our team designed and built a database to manage inventory, customer data, and orders. We focused on data integrity and efficiency, creating a valuable asset for the store's operations.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+
+<style>
+  h1 {
+    text-align: center;
+  }
+  body{
+    background-color: #FDF7F2;
+  }
+</style>
+
+<%- include ('partials/bottom_nav.ejs') %>
+
+<%- include ('partials/footer.ejs') %>
+
+   
